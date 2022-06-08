@@ -17,4 +17,18 @@ code {
   box-sizing: border-box;
   overflow-x: hidden;
   scroll-behavior: smooth;
+
+
+}
+
+:root{
+--font-bebas: 'Bebas Neue', cursive;
+--font-fira: 'Fira Sans', sans-serif;
+--font-ibm: 'IBM Plex Mono', monospace;
+--font-kdam: 'Kdam Thmor Pro', sans-serif;
+--font-mont: 'Montserrat', sans-serif;
+--font-noto: 'Noto Sans', sans-serif;
+--font-popis: 'Poppins', sans-serif;
+--font-roboto: 'Roboto', sans-serif;
+--font-secular: 'Secular One', sans-serif;
 }

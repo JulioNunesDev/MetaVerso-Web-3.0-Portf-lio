@@ -1,9 +1,9 @@
-import Home from "../pages/Home";
+import Home from '../pages/Home'
 
 const LayoutBase = () => {
     return ( 
         <>
-        <Home />
+        <Home/>
         </>
      );
 }

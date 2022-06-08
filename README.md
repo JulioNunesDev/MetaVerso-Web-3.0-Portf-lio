@@ -40,3 +40,4 @@ Trazendo o conceito de Web 3.0 com a tecnologia Blockchain, integrando uma conex
 <h1>
 Com o Solidity trago um Contrato ("Smart Contract") para ver na pratica uma compra feita com uma carteira digital
 </h1>
+
