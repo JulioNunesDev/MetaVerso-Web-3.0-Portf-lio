@@ -321,7 +321,7 @@ overflow: hidden;
 
     .details{
         border-radius: 10;
-        transition: .5s ease-in;
+        transition: .2s ease-in;
         cursor: cell;
     }
     .details:hover{
@@ -334,13 +334,79 @@ overflow: hidden;
         background-color:#232428;
            width: 300px;
            height: 300px;
+
+           .ms{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            
+          
+            
+            
+            img{
+                object-fit: cover;
+                width: 100%;
+
+                height: 100%;
+           }
+
+           h1{
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px 20px;
+            background-color:var(--color-bg2);
+            position: absolute;
+            border-radius: 10px;
+            display: none;
+            transition: 0.2s ease-in-out;
+            font-family: var(--font-roboto);
+           }
+
+        }
+           
+
+
+           
        }
 
        .box1{
-          
            width: 300px;
            height: 300px;
            background-color:#232428;
+
+           .ms{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            
+          
+            
+            
+            img{
+                object-fit: cover;
+                width: 100%;
+
+                height: 100%;
+           }
+
+           h1{
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px 20px;
+            background-color:var(--color-bg2);
+            position: absolute;
+            border-radius: 10px;
+            display: none;
+            transition: 0.2s ease-in-out;
+            font-family: var(--font-roboto);
+           }
+
+        }
+           
        }
 
        .box2{
@@ -357,8 +423,43 @@ overflow: hidden;
            width: 100%;
            height: 100%;
            grid-row: 2 ;
+           overflow: hidden;
+
+          .ms{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            
+          
+            
+            
+            img{
+                object-fit: fill;
+                width: 100%;
+
+                height: 100%;
+           }
+
+           h1{
+            top: 50%;
+            left: 50%;
+            padding: 10px 20px;
+            background-color:var(--color-bg2);
+            position: absolute;
+            border-radius: 10px;
+            display: none;
+            transition: 0.2s ease-in-out;
+            font-family: var(--font-roboto);
+           }
+
+        }
            
        }
+       .ms:hover h1{
+        display: block;
+       }
+
        .box4{
           grid-column: 1 ;
     background-color: #232428;

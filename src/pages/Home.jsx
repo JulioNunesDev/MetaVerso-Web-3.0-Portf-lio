@@ -10,6 +10,12 @@ import eth from '../assets/eth.png'
 import Footer from "../shared/components/footer/footer";
 
 
+//imags display grid
+import msMarvel from '../assets/ms.png';
+import poke from '../assets/poke.png';
+import dapp from '../assets/dapp.png';
+
+
 
 
 
@@ -71,10 +77,41 @@ const Home = () => {
             </div>
 
             <div className="lineTwo">
-               <div className="box details"><h1>Em Breve</h1></div>
-               <div className="box1 details"><h1>Em Breve</h1></div>
+
+               <div className="box details">
+               <a
+                href="https://poker-next-next-js.vercel.app/" target="_blank">
+
+                <div className="ms">
+                    <img src={poke} alt="projeto ms marvel" />
+                    <h1>PokeNext</h1>
+                 </div>
+               </a>
+                </div>
+
+
+
+               <div className="box1 details">
+               <a
+                href="https://dapp-counter-meta-mask.vercel.app/" target="_blank">
+                <div className="ms">
+                    <img src={dapp} alt="projeto ms marvel" />
+                    <h1>Dapp App</h1>
+                 </div>
+               </a>
+
+               </div>
+
                <div className="box2 details"><h1>Em Breve</h1></div>
-               <div className="box3 details"><h1>Em Breve</h1></div>
+               <div className="box3 details">
+                <a
+                href="https://netflixjulionunes.netlify.app/" target="_blank">
+                <div className="ms">
+                    <img src={msMarvel} alt="projeto ms marvel" />
+                    <h1>Netflix Projeto</h1>
+                 </div>
+               </a>
+                </div>
                <div className="box4 details"><h1>Em Breve</h1></div>
                <div className="box5 details"><h1>Em Breve</h1></div>
                <div className="box6 details"><h1>Em Breve</h1></div>

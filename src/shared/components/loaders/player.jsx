@@ -88,7 +88,7 @@ const Player = () => {
   const [music, setMusic] = useState({musica: `${music1}`,musica1: `${music2}` });
 
   const { isPlaying, play, pause, toggle } = useAudio({
-    src: music2,
+    src: music1,
     loop: true,
     volume: 0
   });
