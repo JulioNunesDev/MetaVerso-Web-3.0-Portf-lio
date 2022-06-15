@@ -15,7 +15,13 @@ import msMarvel from '../assets/ms.png';
 import poke from '../assets/poke.png';
 import dapp from '../assets/dapp.png';
 
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init({
+    once: true,
+    
+});
 
 
 
@@ -27,7 +33,12 @@ const Home = () => {
         <>
         <Content >
          <Header/>
-         <div className="contents">
+         <div
+         data-aos="fade-zoom-in"
+         data-aos-easing="ease-in-back"
+         data-aos-delay="200"
+         data-aos-offset="0"
+         className="contents">
              <div className="anima"> </div>
              <div className="tela"> </div>
              <div className="titles">
@@ -47,20 +58,35 @@ const Home = () => {
             </div>
 
             <div className="lineTwo">
-                <div className="card cinza">
+                <div 
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="200"
+                data-aos-offset="0"
+                className="card cinza">
                     <h1>Blockchain</h1>
                     <p>a blockchain é um livro-razão compartilhado e imutável que facilita o processo de registro de transações e o rastreamento de ativos em uma rede empresarial.</p>
                     
                     <img src={block} alt="" />
 
                 </div>
-                <div className="card">
+                <div 
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="200"
+                data-aos-offset="0"
+                className="card">
                 <h1>Web 3.0</h1>
                     <p> A versão 3.0 é construída sobre os conceitos centrais de descentralização, abertura e maior atuação do usuário.</p>
                     
                     <img src={web} alt="" />
                 </div>
-                <div className="card cinza">
+                <div 
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="200"
+                data-aos-offset="0"
+                className="card cinza">
                 <h1>Ethereum</h1>
                     <p>Ethereum é uma plataforma descentralizada capaz de executar contratos inteligentes e aplicações descentralizadas usando a tecnologia blockchain.</p>
                     
@@ -69,14 +95,24 @@ const Home = () => {
             </div>
         </SubContent>
         <ThreeContent>
-        <div className="lineOne">
+        <div
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="150"
+        data-aos-offset="0"
+        className="lineOne">
                 <p>Portfólio</p>
                 <h1>Algumas coisas que fiz,<br/>
                     nesses 5 meses.</h1>
                 
             </div>
 
-            <div className="lineTwo">
+            <div 
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="200"
+            data-aos-offset="0"
+            className="lineTwo">
 
                <div className="box details">
                <a
