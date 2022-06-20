@@ -85,15 +85,15 @@ const Div = styled.div`
 const Player = () => {
   const [playe, setPlaye] = useState(false);
 
-  const [music, setMusic] = useState({musica: `${music1}`,musica1: `${music2}` });
+  const [music, setMusic] = useState(new Audio(music1) );
 
   const { isPlaying, play, pause, toggle } = useAudio({
     src: music1,
     loop: true,
-    volume: 0
+    volume: 1
   });
 
-
+ 
 
   function player() {
     

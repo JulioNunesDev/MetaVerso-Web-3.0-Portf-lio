@@ -32,7 +32,7 @@ const Home = () => {
     return ( 
         <>
         <Content >
-         <Header/>
+        
          <div
          data-aos="fade-zoom-in"
          data-aos-easing="ease-in-back"

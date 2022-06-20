@@ -1,99 +1,78 @@
 import { ContentNav } from "../../../styles/StyHeader";
 import { NavLink } from "react-router-dom";
-import { useState, useEffect} from "react";
+import { useState, useEffect } from "react";
 import Player from "../loaders/player";
 
-
-
-
 const Header = () => {
-    let activeStyle = {
-        textDecoration: "none",
-        color: '#c41b54',
-        fontWeight: '600'
-        
-      };
-    
-      let activeClassName = "underline";
+  let activeStyle = {
+    textDecoration: "none",
+    color: "#c41b54",
+    fontWeight: "600",
+  };
 
+  let activeClassName = "underline";
 
-      const [scrollPosition, setScrollPosition] = useState(0);
-      const handleScroll = () => {
-          const position = window.pageYOffset;
-          setScrollPosition(position);
-      };
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollPosition(position);
+  };
 
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
 
-      
-      useEffect(() => {
-          window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+    handleScroll();
+  }, []);
 
-         
-      
-          return () => {
-              window.removeEventListener('scroll', handleScroll);
-          };
-          handleScroll()
-      }, []);
+  console.log(scrollPosition);
 
-   
+  function handleModal() {
+    alert("Finalizado ate dia 30!");
+  }
 
-      console.log(scrollPosition)
-
-    
-
-      function handleModal(){
-        alert('Finalizado ate dia 30!')
-
-      }
-    
-    return ( 
-        <ContentNav bg={!scrollPosition == 0  ? 'black': undefined }>
-            <ul>
-          
-            <li>
+  return (
+    <ContentNav bg={!scrollPosition == 0 ? "black" : undefined}>
+      <ul>
+        <li>
           <NavLink
-            to="/"
+            to="/about"
             className={({ isActive }) =>
               isActive ? activeClassName : undefined
             }
-            onClick={handleModal}
+            style={({ isActive }) => (isActive ? activeStyle : undefined)}
+            
           >
             About
           </NavLink>
         </li>
         <li>
           <NavLink
-            to=""
-            
-            style={({ isActive }) =>
-            isActive ? activeStyle : undefined
-          }
+            to="/"
+            style={({ isActive }) => (isActive ? activeStyle : undefined)}
           >
-           Home
+            Home
           </NavLink>
         </li>
         <li>
           <NavLink to="">
             {({ isActive }) => (
               <span
-                className={
-                  isActive ? activeClassName : undefined
-                }
+                className={isActive ? activeClassName : undefined}
                 onClick={handleModal}
               >
                 Resources
               </span>
             )}
-            
           </NavLink>
         </li>
-               
-            </ul>
-            
-            <Player/>
-        </ContentNav>
-     );
-}
- 
+      </ul>
+
+      <Player />
+    </ContentNav>
+  );
+};
+
 export default Header;

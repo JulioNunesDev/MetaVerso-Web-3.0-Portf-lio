@@ -6,7 +6,7 @@ import Loading from "./shared/components/loaders/loading"
 
 function App() {
 
- const [load, setLoad]=useState(false)
+ const [load, setLoad]=useState(true)
 
 
 

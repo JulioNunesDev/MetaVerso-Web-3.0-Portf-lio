@@ -15,7 +15,7 @@ to{opacity:1;}
 `
 
 export const Content = styled.section`
-animation: 3s ${fade};
+animation: 2s ${fade};
 width: 100%;
 height: 100%;
 background-image: linear-gradient(135deg, #373a3e 0%, #5a5c60 48%, #373a3e 100%);

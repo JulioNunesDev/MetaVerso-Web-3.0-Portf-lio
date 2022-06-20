@@ -5,14 +5,19 @@ import { GlobalStyle } from './GlobalStyles'
 import './index.css'
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import { AppDadosContext } from './context/ToggleButtoes'
+import About from './pages/About'
+import Header from './shared/components/header'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
 
     <BrowserRouter>
     <AppDadosContext>
+      <Header/>
      <Routes>
        <Route path='/' element={ <App />}/>
+       <Route path='/about' element={ <About/>}/>
+       <Route path='*' element={ <App/>}/>
      </Routes>
     </AppDadosContext>
     </BrowserRouter>
