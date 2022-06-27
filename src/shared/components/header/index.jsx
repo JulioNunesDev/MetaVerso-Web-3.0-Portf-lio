@@ -24,14 +24,11 @@ const Header = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-    handleScroll();
+ 
   }, []);
 
   console.log(scrollPosition);
 
-  function handleModal() {
-    alert("Finalizado ate dia 30!");
-  }
 
   return (
     <ContentNav bg={!scrollPosition == 0 ? "black" : undefined}>
@@ -50,22 +47,21 @@ const Header = () => {
         </li>
         <li>
           <NavLink
-            to="/"
+            to="/home"
             style={({ isActive }) => (isActive ? activeStyle : undefined)}
           >
             Home
           </NavLink>
         </li>
         <li>
-          <NavLink to="">
-            {({ isActive }) => (
-              <span
-                className={isActive ? activeClassName : undefined}
-                onClick={handleModal}
-              >
+          <NavLink to="/resources"
+          style={({ isActive }) => (isActive ? activeStyle : undefined)}
+          >
+           
+              <span>
                 Resources
               </span>
-            )}
+          
           </NavLink>
         </li>
       </ul>
