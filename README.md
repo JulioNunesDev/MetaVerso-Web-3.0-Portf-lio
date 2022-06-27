@@ -31,15 +31,6 @@ import styles from 'styles.module.css'
 import {Web} from 'Web3'
 ```
 
-<h1>
-Focando em mostrar minhas habilidades de Front e Back-End.
-</h1>
-<h1>
-Trazendo o conceito de Web 3.0 com a tecnologia Blockchain, integrando uma conexão com a Meta Mask para fazer o login e para interagir com o conteúdo.
-</h1>
-<h1>
-Com o Solidity trago um Contrato ("Smart Contract") para ver na pratica uma compra feita com uma carteira digital
-</h1>
 <<<<<<< HEAD
 
 =======
