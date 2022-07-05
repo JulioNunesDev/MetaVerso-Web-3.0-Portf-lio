@@ -337,17 +337,15 @@ overflow: hidden;
 
            .ms{
             width: 100%;
-            height: 100%;
             position: relative;
             overflow: hidden;
             
-          
+            height: 100%;
             
             
             img{
                 object-fit: cover;
                 width: 100%;
-
                 height: 100%;
            }
 
@@ -415,8 +413,45 @@ overflow: hidden;
            width: 300px;
            height: 100%;
            grid-row: 1 / 3;
+
+           .ms{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            aspect-ratio: 16/9;
+            
+          
+            
+            
+            img{
+                object-fit: cover;
+                width: 100%;
+
+                height: 100%;
+           }
+
+           h1{
+            top: 50%;
+            left: 50%;
+            padding: 10px 35px;
+            background-color:var(--color-bg2);
+            position: absolute;
+            border-radius: 10px;
+            transform: translate(-50%, -50%);
+            display: none;
+            transition: 0.2s ease-in-out;
+            font-family: var(--font-roboto);
+           }
+
+        }
+
+
+           
            
        }
+
+
        .box3{
           grid-column: 1 / 3 ;
            background-color: #232428;
@@ -430,12 +465,13 @@ overflow: hidden;
             height: 100%;
             position: relative;
             overflow: hidden;
+            aspect-ratio: 16/9;
             
           
             
             
             img{
-                object-fit: fill;
+                object-fit: cover;
                 width: 100%;
 
                 height: 100%;
