@@ -140,7 +140,7 @@ const Home = () => {
 
                <div className="box2 details">
                <a
-                href="https://netflixjulionunes.netlify.app/" target="_blank">
+                href="https://blognodeperson.herokuapp.com/" target="_blank">
                 <div className="ms">
                     <img src='https://media.discordapp.net/attachments/963817829386297354/993904750590447756/Captura_de_tela_2022-07-05_124008.png?width=774&height=467' alt="projeto ms marvel" />
                     <h1>Blog NodeJs</h1>
